@@ -1,0 +1,158 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>body {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  width: auto;
+  height: auto;
+  color: #fff;
+  background: #00000080;
+  font-family: Comic Sans MS;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.info__list {
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+}
+
+.info__item {
+  flex: 100%;
+}
+
+#loading {
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background: #00000080;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#controls {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+}
+
+.control-button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #0000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+#left-controls {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+#camera-control {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.control-group {
+  margin: 10px;
+}
+
+</style>
+</head>
+<body>
+    <!-- <script>
+        let resizeTimeout;
+
+        function reloadPage() {
+            location.reload();
+        }
+
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(reloadPage, 0); // Задержка в 500 миллисекунд перед перезагрузкой
+        });
+    </script> -->
+<div id="loading">Loading...</div>
+<div id="container"></div>
+<div id="info" class="info">
+    <ul class="info__list">
+        <li class="info__item">
+            <strong>A, W, S, D, SPACE</strong> - Controls
+        </li>
+        <!-- <li class="info__item">
+            <strong>C</strong> - Camera controls
+        </li> -->
+        <!-- <li class="info__item">
+            <strong>R</strong> - Reset car position
+        </li>
+        <li class="info__item">
+            <strong>Arrows</strong> - Rotate the car in the air (beta)
+        </li>
+        <li class="info__item">
+            <input type="checkbox" name="isMirror" id="isMirror" checked>
+            <label for="isMirror">Mirror</label>
+        </li>
+        <li class="info__item">
+            <input type="checkbox" name="isBloom" id="isPostProcessing" checked>
+            <label for="isPostProcessing">Post-Processing</label>
+        </li> -->
+    </ul>
+</div>
+
+
+<!-- <button class="control-button" id="camera-control">Camera</button>
+<div id="controls">
+
+    <div id="left-controls" class="control-group">
+        <button id="gas" class="control-button">GAS</button>
+        <button id="brake" class="control-button">BREAK</button>
+    </div>
+
+
+    <div id="right-controls" class="control-group">
+        <button id="left-turn" class="control-button">L</button>
+        <button id="right-turn" class="control-button">R</button>
+    </div>
+</div> -->
+
+<script src="/index.64a4978e.js" defer=""></script>
+</body>
+</html>
