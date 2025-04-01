@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "cannon-es": "^0.20.0",
     "cannon-es-debugger": "^1.0.0",
     "parcel": "^2.8.3",
